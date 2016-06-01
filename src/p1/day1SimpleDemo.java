@@ -11,7 +11,7 @@ public class day1SimpleDemo {
 	public static void main(String[] args) {
 		WebDriver driver;
 		//如果浏览器不是默认安装，则指定其位置。
-		System.setProperty("webdriver.firefox.bin", "D:/Program Files (x86)/Mozilla Firefox/firefox.exe");
+	//	System.setProperty("webdriver.firefox.bin", "D:/Program Files (x86)/Mozilla Firefox/firefox.exe");
 		//声明一个火狐浏览器driver对象
 		driver = new FirefoxDriver();
 		
