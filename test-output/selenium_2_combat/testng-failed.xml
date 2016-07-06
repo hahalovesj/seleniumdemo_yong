@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [selenium_2_combat]" parallel="tests">
+  <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="sleepTime" value="800"/>
+  <parameter name="testurl" value="http://127.0.0.1:1080/WebTours/"/>
+  <parameter name="waitMillisecondsForAlert" value="40000"/>
+  <parameter name="timeOut" value="20"/>
+  <listeners>
+    <listener class-name="com.demo.test.plugins.arrow.TestResultListener"/>
+    <listener class-name="com.demo.test.plugins.arrow.RetryListener"/>
+    <listener class-name="com.demo.test.plugins.arrow.PowerEmailableReporter"/>
+  </listeners>
+  <test name="Home(failed)" parallel="tests">
+    <classes>
+      <class name="com.demo.test.testcases.login.LoginPage_002_LoginWithoutPassword">
+        <methods>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_002_LoginWithoutPassword -->
+      <class name="com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test">
+        <methods>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test -->
+      <class name="com.demo.test.testcases.home.HomePage_001_CheckHomeText_Test">
+        <methods>
+          <include name="checkHomeText" invocation-numbers="0"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.home.HomePage_001_CheckHomeText_Test -->
+    </classes>
+  </test> <!-- Home(failed) -->
+  <test name="Login(failed)" parallel="tests">
+    <classes>
+      <class name="com.demo.test.testcases.login.LoginPage_002_LoginWithoutPassword">
+        <methods>
+          <include name="endTest"/>
+          <include name="loginWithoutPassword" invocation-numbers="0"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_002_LoginWithoutPassword -->
+      <class name="com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test">
+        <methods>
+          <include name="endTest"/>
+          <include name="startTest"/>
+          <include name="loginSuccessFunction" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test -->
+      <class name="com.demo.test.testcases.home.HomePage_001_CheckHomeText_Test">
+        <methods>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.home.HomePage_001_CheckHomeText_Test -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [selenium_2_combat] -->

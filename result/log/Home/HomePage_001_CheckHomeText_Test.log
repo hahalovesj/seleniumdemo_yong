@@ -1,0 +1,15 @@
+[2016-07-06 14:17:02] [INFO] 当前操作系统是:[Windows 10]
+[2016-07-06 14:17:02] [INFO] 当前操作系统是:[Windows 10]
+[2016-07-06 14:17:02] [INFO] 启动测试浏览器：[chrome]
+[2016-07-06 14:17:02] [INFO] 启动测试浏览器：[chrome]
+[2016-07-06 14:17:04] [INFO] 最大化浏览器:chrome
+[2016-07-06 14:17:04] [INFO] 最大化浏览器:chrome
+[2016-07-06 14:17:06] [INFO] 打开测试页面:[http://127.0.0.1:1080/WebTours/]
+[2016-07-06 14:17:06] [INFO] checkHomeText 测试用例开始执行！
+[2016-07-06 14:17:07] [WARN] checkHomeText 测试用例执行失败！
+[2016-07-06 14:17:07] [ERROR] [2016_07_06_14_17_07_checkHomeText] ,截图失败，原因：null
+[2016-07-06 14:17:07] [INFO] 打开测试页面:[http://127.0.0.1:1080/WebTours/]
+[2016-07-06 14:17:07] [INFO] loginSuccessFunction 测试用例开始执行！
+[2016-07-06 14:17:07] [WARN] loginSuccessFunction 测试用例执行失败！
+[2016-07-06 14:17:08] [INFO] [2016_07_06_14_17_07_loginSuccessFunction] 截图成功，保存在：[ result/screenshot/2016_07_06_14_17_07_loginSuccessFunction.jpg ]
+[2016-07-06 14:17:09] [INFO] 执行失败的用例 = checkHomeText
